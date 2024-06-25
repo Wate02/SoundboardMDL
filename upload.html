@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/compressorjs@latest/dist/compressor.min.js"></script>
+  <title>Upload sound</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding-left: 20px; padding-top: 20px;">
+    <h2>Upload Sound</h2>
+  Select Image:<br>
+  <label for="imageUpload">
+    <img id="imagePreview" src="img/default.jpeg" ><br>
+  </label>
+  <input type="file" id="imageUpload" style="display: none;"><br>
+  Name: <br>
+  <input id="soundNameInput" width="200px" height="20px"><br><br>
+  Audio: <br>
+<input type="file" id="myfile" name="Audio file"><br><br>
+  <audio id="audioPlayer" src="" controls>
+  <source src="default_audio_preview.mp3" type="audio/mpeg">
+  Ihr Browser unterstützt das Audio-Element nicht.
+</audio>
+<br><br>
+  <button id="uploadButton" onclick="addSound()">Upload <i class="fa-solid fa-plus"></i></button>
+  <button onclick="back()">&larr; Back</button>
+  
+  <div id="container">
+    <div id="sounds">
+      <div id="soundsList"></div>
+    </div>
+  </div>
+
+  <div id="selectedFiles"></div> 
+
+  <input type="file" id="audioUpload" style="display: none;">
+</body>
+
+
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+
+
+  <script src="upload.js"></script>
+</body>
+</html>

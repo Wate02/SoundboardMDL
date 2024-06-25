@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15pt;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #212528;
+  color: white;
+}
+
+#title {
+  
+text-shadow: 0.2px 0.2px black;
+
+
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+button {
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  border: 0.5px solid white;
+  padding: 10px;
+  
+  
+  
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.topnav {
+  display: none;
+}
+
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+  color: white;
+  min-height: 200px;
+}
+
+
+#container {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+#soundsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+.soundcard {
+  text-align: center; 
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+#nametext {
+  margin-top: 10px;
+  grid-column: 1 / -1; 
+}
+
+
+
+.fab {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #6200ea;
+color: white;
+border: none;
+border-radius: 50%;
+width: 56px;
+height: 56px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+cursor: pointer;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: transform 0.2s;
+}
+
+
+.fab:hover {
+transform: scale(1.1);
+}
+
+#options{
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000;
+
+}
+
+.light-mode text {
+  color: #000;
+
+}
+
+.light-mode button {
+  color: #000 !important;
+  border-radius: 5px;
+  color: black;
+  background-color: transparent;
+  border: 0.5px solid black;
+  padding: 10px;
+  box-shadow: none;
+}
+
+
+.light-mode .fab {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #6200ea;
+color: white !important;
+border: none;
+border-radius: 50%;
+width: 56px;
+height: 56px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+cursor: pointer;
+box-shadow: none;
+transition: transform 0.2s;
+}
+
+
+@media (min-width: 768px) {
+    nav {
+        padding-left: 40px; /* Erhöht das Padding auf 40px */
+    }
+}
